@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f1f0;
+  color: #040404;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 244 241 240;
+    --foreground: 4 4 4;
+    --card: 255 255 255;
+    --card-foreground: 4 4 4;
+    --popover: 255 255 255;
+    --popover-foreground: 4 4 4;
+    --primary: 142 106 87;
+    --primary-foreground: 255 255 255;
+    --secondary: 116 136 148;
+    --secondary-foreground: 4 4 4;
+    --muted: 244 241 240;
+    --muted-foreground: 97 86 78;
+    --accent: 245 178 178;
+    --accent-foreground: 4 4 4;
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
+    --border: 229 229 229;
+    --input: 229 229 229;
+    --ring: 142 106 87;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-savina-cream text-savina-dark;
+  }
+}
+
+/* Custom styles for the blog layout */
+.blog-post-card {
+  transition: all 0.3s ease;
+}
+
+.blog-post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-section {
+  background: linear-gradient(135deg, rgba(244, 241, 240, 0.9), rgba(245, 178, 178, 0.1));
+}
