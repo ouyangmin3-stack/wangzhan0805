@@ -32,13 +32,17 @@
   ],
   "exclude": [
     "node_modules",
+    ".same",
     "build",
     "db",
     "drizzle",
     "examples",
+    "output",
+    "src",
     "worker",
     "vite.config.ts",
     "drizzle.config.ts",
+    "tailwind.config.ts",
     "app/chatgpt-auth.ts"
   ]
 }
