@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -15,8 +11,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
-    "jsxImportSource": "same-runtime/dist",
+    "jsx": "react-jsx",
     "incremental": true,
     "plugins": [
       {
@@ -24,20 +19,26 @@
       }
     ],
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./*"]
     }
   },
   "include": [
+    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "build/types/**/*.ts",
-    "next-env.d.ts",
-    "out/types/**/*.ts"
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "build",
+    "db",
+    "drizzle",
+    "examples",
+    "worker",
+    "vite.config.ts",
+    "drizzle.config.ts",
+    "app/chatgpt-auth.ts"
   ]
 }

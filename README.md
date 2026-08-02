@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dune Edit
 
-## Getting Started
+An original English-language content site with practical guides for home,
+technology, travel, and everyday products. Built with Next.js for Vercel.
 
-First, run the development server:
+## Published content
+
+- Home and category collections
+- Matter smart bulb buying guide with one disclosed PartnerBoost link
+- Power bank buying guide without commission links
+- Carry-on organization guide without commission links
+- About and research method
+- Affiliate disclosure and privacy information
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Production build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Current commercial setup
 
-## Learn More
+- The smart bulb guide links to the supplied PartnerBoost URL.
+- The link uses `rel="sponsored nofollow noopener"` and has a nearby commission disclosure.
+- Dune Edit does not claim Amazon Associates membership.
+- The product section is labeled as a researched, specification-based overview rather than hands-on testing.
+- No prices, discounts, star ratings, customer counts, or unlicensed product images are published.
 
-To learn more about Next.js, take a look at the following resources:
+## Before adding more tools or links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Confirm that every campaign allows the traffic source you plan to use.
+2. Use product details and creative assets supplied by the brand or campaign, and follow the relevant usage rules.
+3. Put a plain-language commission disclosure close to every partner link.
+4. Update the Privacy page and consent flow before adding analytics, advertising pixels, email signup, or non-essential cookies.
+5. Replace the honest contact placeholder only after a real, monitored inbox is active.
